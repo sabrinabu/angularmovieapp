@@ -30,3 +30,26 @@ export interface Genres {
   id: number;
   name: string;
 }
+
+export interface MovieVideoDto{
+  id:number;
+  results:MovieVideo[];
+}
+
+export interface MovieVideo{
+  site:string;
+  key:string;
+}
+
+export interface MovieImages{
+ backdrops:{
+   file_path: string;
+ }[]
+}
+
+export interface MovieCredits{
+  cast:{
+    name: string;
+    profile_path: string;
+  }[];
+}
