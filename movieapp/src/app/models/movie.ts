@@ -12,12 +12,21 @@ export interface Movie {
   title: string;
   video: boolean;
   vote_average: number;
-  vote_count:number;
+  vote_count: number;
+  revenue: number;
+  runtime: number;
+  status: string;
+  genres: Genres[];
 }
 
 export interface MovieDto {
   page: number;
-  results:Movie [];
+  results: Movie[];
   total_results: number;
   total_pages: number;
+}
+
+export interface Genres {
+  id: number;
+  name: string;
 }
