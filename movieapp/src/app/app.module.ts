@@ -11,9 +11,7 @@ import { SliderComponent } from './components/slider/slider.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ItemsbannerComponent } from './components/itemsbanner/itemsbanner.component';
 import { MovieitemComponent } from './components/movieitem/movieitem.component';
-import {PaginatorModule} from 'primeng/paginator';
-import { CdkVirtualScrollViewport } from '@angular/cdk/scrolling';
-
+import { PaginatorModule } from 'primeng/paginator';
 
 @NgModule({
   declarations: [
@@ -26,7 +24,7 @@ import { CdkVirtualScrollViewport } from '@angular/cdk/scrolling';
     ItemsbannerComponent,
     MovieitemComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, BrowserAnimationsModule,PaginatorModule,CdkVirtualScrollViewport],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, BrowserAnimationsModule, PaginatorModule],
   providers: [],
   bootstrap: [AppComponent]
 })
